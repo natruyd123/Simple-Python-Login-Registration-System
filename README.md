@@ -1,6 +1,6 @@
-# Simple-Python-Login-Registration-System
+### Simple-Python-Login-Registration-System
 
-## Note:
-This project is a personal learning experience and is not finished yet.
+### Note:
+- This project is a personal learning experience and it's not finished yet.
 
 
