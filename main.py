@@ -48,7 +48,7 @@ def register():
         # Connect to the database
         cur = mysql.connection.cursor()
 
-         # Check if the user already exists
+        # Check if the user already exists
         cur.execute("SELECT * FROM users WHERE email = %s", (email,))
         user = cur.fetchone()
         
@@ -58,10 +58,13 @@ def register():
             return redirect(url_for('register'))
       
         # Hash and salt the password
+        salt = bcrypt.gensalt()
+        hashed_password = bcrypt.hashpw(password.encode(), salt)
+
 
         # Insert the new user into the database
         cur.execute("INSERT INTO users (firstName, lastName, email, password) VALUES (%s, %s, %s, %s)",
-                    (fname, lname, email, password))
+                    (fname, lname, email, hashed_password))
         mysql.connection.commit()
         cur.close()
 
