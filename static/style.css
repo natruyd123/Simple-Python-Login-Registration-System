@@ -38,6 +38,14 @@ a.nav-link, .navbar-brand{
     padding: 1rem;
 }
 
+/* flash message */
+ul.flashes {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
 
 
 
