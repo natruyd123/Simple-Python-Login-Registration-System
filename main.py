@@ -29,7 +29,7 @@ def login():
         return redirect(url_for('home')) 
     
     if request.method == 'POST':
-        email = request.form.get('email', '').strip()
+        email = request.form.get('username', '').strip()
         password = request.form.get('password', '').strip()
 
         if not email or not password:
