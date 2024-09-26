@@ -6,7 +6,7 @@
 - Input validation
 - Session management
 
-### Note:
+### Note
 - Feel free to clone and explore this project to learn about the basic login and registration system.
 
 
