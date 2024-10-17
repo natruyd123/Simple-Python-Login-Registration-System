@@ -35,5 +35,6 @@ pip install -r requirements.txt
 
 ### Note
 - Feel free to clone and explore this project to learn about the basic login and registration system.
+- Must learn the virtual environment before you clone this app. 
 
 
